@@ -7,7 +7,7 @@ public class Coin extends PApplet {
     private PImage coin = new PImage();
     float posX = random(400);
     float posY = random(300);
-    int size = 25;
+    int size = 20;
 
     public Coin(PApplet sketch) {
         Random rand = new Random();
@@ -40,4 +40,5 @@ public class Coin extends PApplet {
     public int getSize() {
         return size;
     }
+
 }

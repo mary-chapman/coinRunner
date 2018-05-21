@@ -4,9 +4,13 @@ import java.util.Random;
 
 public class Arrow extends PApplet {
     private PApplet sketch;
+
+
+
     private float posX = 0;
     private float posY = 200;
     int width = 40;
+    int height = 15;
 
     private PImage arrow_right = new PImage();
 
@@ -16,7 +20,7 @@ public class Arrow extends PApplet {
 
     public void create() {
         arrow_right = sketch.loadImage("assets/arrow_right.png");
-        arrow_right.resize(width, 15);
+        arrow_right.resize(width, height);
     }
 
     public void move(int speed) {
@@ -32,6 +36,14 @@ public class Arrow extends PApplet {
 
     public float getPosX() {
         return posX;
+    }
+
+    public void setPosX(float posX) {
+        this.posX = posX;
+    }
+
+    public int getHeight() {
+        return height;
     }
 
     public float getPosY() {

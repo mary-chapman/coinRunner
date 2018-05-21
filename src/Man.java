@@ -10,6 +10,9 @@ public class Man extends PApplet {
     private PImage restPose = new PImage();
     private int width = 20;
     private int height = 50;
+    private int coins = 10;
+    private int coinCount = coins;
+    private boolean isAlive = true;
 
     private float xPos;
     private float yPos;
@@ -88,5 +91,29 @@ public class Man extends PApplet {
 
     public int getHeight() {
         return height;
+    }
+
+    public int getCoins() {
+        return coins;
+    }
+
+    public void setCoins(int coins) {
+        this.coins = coins;
+    }
+
+    public boolean isAlive() {
+        return isAlive;
+    }
+
+    public void setAlive(boolean alive) {
+        isAlive = alive;
+    }
+
+    public int getCoinCount() {
+        return coinCount;
+    }
+
+    public void setCoinCount(int coinCount) {
+        this.coinCount = coinCount;
     }
 }
